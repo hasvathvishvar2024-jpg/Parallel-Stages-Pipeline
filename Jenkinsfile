@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/hasvathvishvar2024-jpg/Parallel-Stages-Pipeline.git'
+                    url: 'YOUR_PROJECT_3_GITHUB_URL'
             }
         }
 
@@ -22,6 +22,12 @@ pipeline {
                         bat 'C:/Users/ASUS/AppData/Local/Programs/Python/Python313/python.exe backend.py'
                     }
                 }
+            }
+        }
+
+        stage('Complete') {
+            steps {
+                echo 'Frontend and Backend checks completed successfully.'
             }
         }
     }
