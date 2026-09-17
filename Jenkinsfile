@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'YOUR_PROJECT_3_GITHUB_URL'
+                    url: 'https://github.com/hasvathvishvar2024-jpg/Parallel-Stages-Pipeline.git'
             }
         }
 
